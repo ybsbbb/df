@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" ng-app="dfoutputApp">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Check df output</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/brootstrap.css" />
+        <link rel="stylesheet" href="app.css" />
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-controller="DfCheckOutputController">
+        <div>
+            df command's output:<br>
+            <textarea ng-model="dfOutputText" ng-change="dfpaste()">
+            </textarea>
+        </div>
+        <div>
+            result:<br>
+            <ul>
+                <li ng-repeat="line in results">{{line | dfOutputFilter}}</li>
+            </ul>
+        </div>
+    </body>
+</html>
