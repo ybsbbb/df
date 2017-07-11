@@ -1,0 +1,6 @@
+#task01-check df command's output  
+using ruby on rails & angularjs  
+all the functional codes are in public file and the task is finished only by angular on front-end. rails is only like a static server.  
+when you run it, enter localhost:3000/app/index.html, then you can use it.  
+or you can visit http://fedora25.usersys.redhat.com:3000/app/index.html  
+
