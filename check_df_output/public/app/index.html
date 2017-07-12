@@ -9,16 +9,18 @@
         <script src="app.js"></script>
     </head>
     <body ng-controller="DfCheckOutputController">
-        <div>
-            df command's output:<br>
-            <textarea ng-model="dfOutputText" ng-change="dfpaste()">
-            </textarea>
-        </div>
-        <div>
-            result:<br>
-            <ul>
-                <li ng-repeat="line in results">{{line | dfOutputFilter}}</li>
-            </ul>
+        <div class="container">
+            <div>
+                df command's output:<br>
+                <textarea class="dfoutput-textarea" ng-model="dfOutputText" ng-change="dfpaste()">
+                </textarea>
+            </div>
+            <div>
+                result:<br>
+                <ul>
+                    <li ng-repeat="line in results">{{line | dfOutputFilter}}</li>
+                </ul>
+            </div>
         </div>
     </body>
 </html>
